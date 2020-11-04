@@ -1,0 +1,213 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-slider {
+	width: 100vw;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+body {
+	animation: fadeIn 2.5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn { 
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+.background-image img {
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+  display: flex;
+  position: absolute;
+
+}
+
+.typing {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.typing p {
+  color: #fff;
+  font-size: 1.8em;  
+  letter-spacing: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 10px solid;
+  font-family: はれのそら明朝;
+  src: url('https://cdn.leafscape.be/Harenosora/harenosora_web.woff2')
+     format("woff2");
+  opacity:0.7;
+
+}
+
+
+.typing .text {
+  width: 0px;
+  animation:
+    type 2.6s steps(13, end) 1000ms forwards;
+}
+
+@keyframes type {
+  to {
+    width: 520px;
+  }
+}
+
+
+.header-left {
+  height:150px;
+  width:50%;
+  z-index: 3;
+  position:fixed;
+  
+
+}
+
+.header-left img{
+  position:fixed;
+  height: 300px;
+  width: 330px;
+  top:-80px;
+  left:-80px;
+  animation:fadeIn 1s ease 0s 0 normal;
+}
+
+@keyframes fadeIn { 
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+.header-left p{
+  font-family: 'Mv Boli';
+  font-weight: lighter;
+  font-size:20px;
+  color:white;
+  opacity:0.7;
+  z-index: 3;
+  position: absolute;
+  left:150px;
+  top:20px ;
+  letter-spacing: 3px;
+  animation:fadeIn 1s ease 0s 0 normal;
+}
+
+@keyframes fadeIn { 
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+
+
+.header-right{
+  position: relative;
+  height:150px;
+  width:40%;
+  right:0px;
+}
+
+
+
+.header-right li{
+  list-style: none ;
+  font-size:20px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  left:820px;
+  width:110px;
+  height:150px;
+  margin: 20px;
+  text-align: center;
+  
+  
+}
+
+.header-right a{ 
+  display:inline-block;
+  color:white;
+  opacity:0.7;
+  border-radius: 10px;
+  padding-top:10px;
+  letter-spacing: 2px;
+  animation:fadeIn 3.5s ease 0s 0 normal;
+}
+
+.header-right p{
+  font-family: 'Mv Boli';
+  font-weight: lighter;
+  display: inline-block;
+  width:140px;
+  animation:fadeIn 3.5s ease 0s 0 normal;
+}
+
+@keyframes fadeIn { 
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+.header-right li :hover {
+  background-color :white;
+  color: blue;
+  transition: color 500ms, background-color 500ms;
+}
+
+
+.footer-center{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-right {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-right li{
+  font-size:20px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left:1100px;
+  bottom: 15px;
+  text-decoration: none;
+}
+
+.footer-right a{
+  color:black;  
+  margin:15px;
+  opacity:0.8;
+  animation:fadeIn 7s ease 0s 0normal;
+}
+
+.footer-right li :hover {
+  color:white;
+  transition: color 500ms, background-color 500ms;
+}
+
+
+
+@keyframes fadeIn { 
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+
